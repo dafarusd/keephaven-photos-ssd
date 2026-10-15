@@ -52,21 +52,28 @@ recommendation.
 
 ## Writing your drive
 
-1. The download is a folder: the image (about 5.4 GB compressed), a small
-   writer program, three checksum files, a how-to, and `Keephaven-code.txt` —
-   the code your drive uses to find its updates. It isn't a licence and it
-   doesn't identify you.
-2. Keep all of it in one folder and run the writer. Windows will warn you that
-   the publisher is unknown; see [below](#the-two-warnings-you-will-see).
-3. The writer shows you the one drive it is about to erase and what is on it
-   now, and makes you type that drive's make and size before it touches
-   anything.
+1. **You download one file**: `Keephaven-Setup.exe`, about 6 MB. Your update
+   code is already inside it, so there is nothing to copy down or keep track
+   of. That code isn't a licence and it doesn't identify you — it's how your
+   drive finds its updates later.
+2. Run it. Windows will warn you that the publisher is unknown; see
+   [below](#the-two-warnings-you-will-see). Setup downloads Keephaven (about
+   5.4 GB) and the writer, checks every piece against its published checksum,
+   and refuses anything it can't check.
+3. It then starts the writer, which shows you the one drive it is about to
+   erase and what is on it now, and makes you type that drive's make and size
+   before it touches anything.
 4. It writes about 36 GB, then **reads all 36 GB back off the drive** and checks
    it against the published checksum. It prints PASS or FAIL in those words. On
    a laptop with a Core i3, over USB 3, the write took 2 minutes 19 seconds and
    the read-back a little over one.
 5. Open the drive, double-click `Keephaven.exe`, and follow the setup page in
    your browser. Setup asks for no password at all.
+
+Setup never touches a disk, and the writer never touches the network. They are
+two programs for that reason: a tool that erases drives should have nothing in
+it that a proxy, a certificate store or an antivirus can turn into a second
+failure mode.
 
 You can write your drive as many times as you like with the same download and
 the same code — a new drive, a bigger drive, the same drive after a mistake.
