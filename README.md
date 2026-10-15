@@ -23,11 +23,11 @@ published. [LICENSE.txt](LICENSE.txt) says precisely which is which.
 
 ## What it costs
 
-**$39, one time.** One purchase is one Keephaven: write it to as many drives as
-you like, run one at a time. Updates are included with no end date — there is no
+**Coming soon.** One purchase will be one Keephaven: write it to as many drives
+as you like, run one at a time. Updates included with no end date — there is no
 subscription and there never will be.
 
-The drive is not included. Checkout opens soon.
+The drive is not included.
 
 ## What it is
 
