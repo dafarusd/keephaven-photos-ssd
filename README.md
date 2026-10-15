@@ -26,9 +26,7 @@ published. [LICENSE.txt](LICENSE.txt) says precisely which is which.
 
 **$39, one time.** One purchase is one Keephaven: write it to as many drives as
 you like, run one at a time. Updates are included with no end date — there is no
-subscription and there never will be. If it isn't for you, email
-support@keephaven.co within 30 days of buying and you get the full price back;
-your update code is switched off and the drive keeps working as it is.
+subscription and there never will be.
 
 The drive is not included. Checkout opens soon.
 
