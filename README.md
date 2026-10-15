@@ -9,9 +9,8 @@ Your photo library, on a USB drive, running on a Windows PC you already own.
 No account, no subscription, and nothing leaves the drive.
 
 This repository is the documentation: what it is, what it needs, exactly what
-happens when you buy it, the checksums of every release, and an honest
-side-by-side against everything else in the category — including where we come
-out worse.
+happens when you buy it, the checksums of every release, and a sourced
+side-by-side against everything else in the category.
 
 **The code for this edition is not here.** The box editions of Keephaven are
 open source under the AGPL at
@@ -146,8 +145,8 @@ twenty-one other ways to keep your photos — Umbrel, Start9, Zima, Synology,
 QNAP, TerraMaster, UGREEN, WD, Ente, Immich, PhotoPrism, Nextcloud, iCloud and
 Google Photos — with a source and a date on every cell.
 
-It ends with **Where Keephaven is worse**, which is eighteen items long. That
-section is the point of the document.
+Every cell has a source and a date, ours included, so you can check any of it
+against the vendor rather than take our word for it.
 
 ## Licence and source
 

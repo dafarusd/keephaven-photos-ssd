@@ -17,9 +17,7 @@ The tables lead with what each product does for you, then who controls it, and o
 
 Two columns were added for this ordering and were not gathered for every product: phone backup away from home, and accounts for a household. Where a vendor's own pages did not say, the cell reads "not checked" rather than a guess. Face and object search was left out for the same reason — it is not sourced for enough rows to print.
 
-**Read the two sections at the end.** "Where Keephaven is worse" and "Still unproven" are
-part of this document, not an appendix. If a comparison page doesn't have those sections,
-it isn't a comparison, it's an advertisement.
+**Read "Still unproven" at the end.** It is part of this document, not an appendix.
 
 ## Rows dropped, and why
 
@@ -115,29 +113,6 @@ it isn't a comparison, it's an advertisement.
 | **Hetzner Storage Share (hosted Nextcloud)** | No 2 TB tier. NX11 1 TB: USD 5.00/mo; NX21 5 TB: USD 16.00/mo (Hetzner's live price file; the page shows "max/mo." with a EUR/USD switch; VAT treatment not shown). Hosted in Falkenstein, Germany. [S23] | 1 TB or 5 TB. | No. | Not published. | Not applicable (cloud). |
 | **Apple iCloud+ 2 TB** | **$9.99/month** (US; tax may be added). Includes Private Relay, Hide My Email, custom email domain, HomeKit Secure Video, sharing with up to five family members. [S24] | 2 TB. | No (an Apple device for the Photos app). | On an iPhone: Settings > your name > iCloud > Photos > "Sync this device". Time not published. [S24] | Not applicable (cloud). |
 | **Google One 2 TB** | Now sold as "Google AI Plus (2 TB)": **$9.99/mo or $99.99/year** (US). 2 TB across Photos, Drive and Gmail, share with up to 5 others, plus Gemini extras. [S25] | 2 TB. | No. | Not published as steps. | Not applicable (cloud). |
-
-## Where Keephaven is worse
-
-Unsoftened. These are the cells a stranger will find first.
-
-1. **No encryption at rest, on any edition.** The photos sit on plain ext4. A stolen box or a lost USB drive is a readable photo library, and the SSD edition's password is a plain-text file on the same drive. Ente is end-to-end encrypted on both its cloud and its self-hosted server; iCloud and Google encrypt with their own keys and iCloud offers E2EE as an option; ZimaOS and Nextcloud offer optional encrypted folders. Keephaven offers nothing.
-2. **One shared login.** The FAQ says per-person accounts are "planned". iCloud shares with "up to five other family members", Google One with "up to 5 others", Ente's family plan with up to 5, ZimaOS's free tier names "3 Members", Immich makes the first user an admin over the rest, Nextcloud exports per user. Keephaven has one password for everyone.
-3. **The Photos SSD can't share files on a PC.** Windows owns port 445, so the SMB share that is the box's main export path does not work; the other partitions are "not readable from Windows". The only way photos leave the drive is through the Immich app or web page. A NAS, Umbrel, Zima and Nextcloud all hand you plain files over SMB.
-4. **The Photos SSD is closed.** All rights reserved, no public source, updates only through a vendor-run gated feed. The boxes are AGPL; the drive isn't. StartOS (MIT), umbrelOS (source-available), Ente, Immich, PhotoPrism and Nextcloud (all AGPL) publish their code; Synology, QNAP and the clouds don't, but nobody expects them to.
-5. **No update has ever been installed on a Photos SSD drive, end to end** (as of 2026-10-15). The drive writes and verifies byte-for-byte on real hardware, and the gated feed answers a good code and refuses a bad one — but an update being fetched, checked and installed on a drive has not happened yet. Its remote access has never been tested from outside the house either. Neither belongs in a comparison as a feature until it is proven.
-6. **The Photos SSD ties up a Windows PC.** It runs inside QEMU, needs about 8 GB of RAM on the host, keeps the PC on, and draws whatever the PC draws. Every other appliance in the table is its own low-power box; the clouds need nothing.
-7. **Unsigned Windows executables.** The writer and Keephaven.exe trigger SmartScreen's "unknown publisher" warning twice per buyer, and the how-to tells them to click through it. Synology's Package Center checks a Synology certificate and QNAP's firmware carries a digital signature; a buyer of those never sees that dialog.
-8. **Box price isn't published**, and GitHub shows no releases or tags. A buyer has to email to find out what it costs; Umbrel, Zima, Synology and the clouds print a number.
-9. **Signing story is a single key with no rollover.** One minisign key, baked into the image, held in one place. Nextcloud documents a signing root with per-app certificates; Start9 documents signed packages and GPG-signed installers. Keephaven's downloadable flash image is published with a SHA-256 only, no signature file.
-10. **1 TB and no drive redundancy.** The box ships with one SSD and no RAID; the FAQ's answer to redundancy is a second box. Synology DS225+, QNAP TS-264, TerraMaster F2-425 and UGREEN DXP2800 all take two drives in one chassis, and BeeStation gives 4 TB in one drive for $399.99 at a reseller. (The site says larger sizes are planned.)
-11. **Phone backup only works at home unless remote access is on.** FAQ: automatic backup happens "when on the box's network". iCloud, Google and Ente back up from anywhere by default.
-12. **The phone apps aren't Keephaven's.** They're Immich's (and Jellyfin's etc.). Synology, QNAP, Google, Apple, Ente and Umbrel ship their own first-party apps.
-13. **Bundled apps still phone their makers.** The privacy page admits the apps inside "send their makers anonymous usage counts … We haven't turned those off yet." Immich's own new-version check is on by default. Start9's privacy page lists a tighter story.
-14. **Power draw is unmeasured.** "Roughly 5–12 watts" is the vendor's own guess, labelled as such. Synology, QNAP, TerraMaster, UGREEN and ZimaBoard all publish measured figures (BeeStation: 7.84 W access, 1.66 W hibernation).
-15. **DIY setup needs a Linux terminal.** Five commands including `dd` to the right device, and a screen or a second microSD just to read the first password. Umbrel's ISO flashes with Etcher; Ente self-host is one script.
-16. **Remote access depends on a third party's account.** Tailscale, not Keephaven. Zima runs its own P2P path; Synology/QNAP run their own relays; Start9 offers Tor with no account at all.
-17. **No support or refunds for self-built boxes.** Stated on the download page.
-18. **Home edition transcodes badly.** HEVC, 10-bit, HDR and high-bitrate 4K "may stutter". Not a photos issue, but it's on the comparison page of a box sold on media.
 
 ## Still unproven on the Photos SSD
 
