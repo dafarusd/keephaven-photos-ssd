@@ -7,7 +7,7 @@ SPDX-License-Identifier: LicenseRef-Keephaven-Proprietary
 
 Keephaven's own code for this edition is proprietary, all of it, including the modules
 it shares with the box editions - Keephaven LLC wrote them and a copyright holder may
-license its own work twice. See LICENCE.txt. The box editions stay AGPL-3.0-only and
+license its own work twice. See LICENSE.txt. The box editions stay AGPL-3.0-only and
 public and are unaffected.
 
 Everything below is other people's work, used unmodified as its makers publish it.

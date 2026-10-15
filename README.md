@@ -22,6 +22,16 @@ published. [LICENSE.txt](LICENSE.txt) says precisely which is which.
 
 ---
 
+## What it costs
+
+**$39, one time.** One purchase is one Keephaven: write it to as many drives as
+you like, run one at a time. Updates are included with no end date — there is no
+subscription and there never will be. If it isn't for you, email
+support@keephaven.co within 30 days of buying and you get the full price back;
+your update code is switched off and the drive keeps working as it is.
+
+The drive is not included. Checkout opens soon.
+
 ## What it is
 
 A Windows program on a USB drive. Double-click it and your Keephaven starts —
@@ -57,8 +67,8 @@ recommendation.
    anything.
 4. It writes about 36 GB, then **reads all 36 GB back off the drive** and checks
    it against the published checksum. It prints PASS or FAIL in those words. On
-   a 2019 laptop over USB 3 the write took 2 minutes 19 seconds and the read-back
-   a little over one.
+   a laptop with a Core i3, over USB 3, the write took 2 minutes 19 seconds and
+   the read-back a little over one.
 5. Open the drive, double-click `Keephaven.exe`, and follow the setup page in
    your browser. Setup asks for no password at all.
 
