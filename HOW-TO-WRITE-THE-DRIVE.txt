@@ -1,0 +1,44 @@
+Keephaven Photos SSD 2026.10.17 - putting it on a drive
+
+You need a USB SSD of 64 GB or more, in a USB enclosure. Everything on it will
+be erased. Thunderbolt and USB4 enclosures are not supported yet: Windows
+reports those as NVMe rather than USB, and the writer will not offer them.
+
+1. Plug in the drive. Unplug every other USB drive - the writer will not guess
+ between two of them, and that is on purpose.
+2. Keep every file from the download in the same folder, including the small
+ Keephaven-code.txt that came with your purchase. That file is how your drive
+ asks Keephaven for new versions, and the writer puts it on the drive for you.
+ It is not a password and it does not unlock anything on the drive. If it is
+ missing the drive still works, but it will not be able to fetch updates and
+ it will tell you so on its own screen.
+3. Double-click Keephaven-Writer.exe. Windows will ask whether to allow it to
+ make changes to your device; it needs that to write to a drive at all.
+4. It shows you the one drive it will erase, what is on it now, and asks you to
+ type the drive's make and size. Nothing is touched until you do.
+5. It writes the image, then reads every byte back off the drive and checks it
+ against the checksum in this folder. It prints PASS or FAIL in those words.
+6. On PASS it tells you which drive letter your Keephaven is on. Open it and
+ double-click Keephaven.exe.
+
+Windows SmartScreen will warn you that the publisher is unknown, twice: once for
+this writer and once for Keephaven.exe. The programs are not signed with a
+certificate. Choose More info, then Run anyway. If you would rather check for
+yourself first, the two .sha256 files beside this one are the checksums of the
+two downloads; in PowerShell, Get-FileHash <file> -Algorithm SHA256.
+
+It checks the download before it touches the drive, then writes, then reads the
+whole drive back. Each of those three steps moves about 5 GB, 36 GB and 36 GB,
+and it prints how fast it is going as it works. On the PC we measured - a 2019
+laptop, USB 3 - the write took 2 minutes and the read-back a little over one.
+Yours will differ; a slow USB port can make it several times that. Do not unplug
+the drive while any of it is running. If the power goes out during the write, run
+the writer again - a half-written drive is simply unfinished, not broken.
+
+If it says the download is damaged, download it again. If it says the drive does
+not hold what was written, try another USB port, then another drive.
+
+You can write your drive as many times as you like with the same download and the
+same code. If you replace the drive, write the new one the same way.
+
+support@keephaven.co

@@ -1,0 +1,76 @@
+Keephaven Photos SSD
+Copyright (c) 2026 Keephaven LLC. All rights reserved.
+
+This licence covers the Keephaven Photos SSD ONLY - the edition that runs on
+a Windows PC from a drive. The Keephaven boxes, Keephaven Home and Keephaven
+Photos, are open source under the GNU Affero General Public License version 3
+and are not affected by anything in this file.
+
+This licence covers Keephaven's own code for the Keephaven Photos SSD
+edition: the Windows program that runs it, the build that produces that
+program and its QEMU, the image's partition layout and build, its update path,
+and the tests and documents for them. NOTICE lists the files. It is a licence
+over code and documents only. It says nothing about the drive, the enclosure or
+any other hardware, which a copyright licence cannot cover.
+
+It does NOT cover, and nothing here changes the terms of:
+
+  - The Keephaven BOX editions, which are published under the GNU Affero
+    General Public License version 3 at https://github.com/dafarusd/keephaven .
+    Keephaven LLC wrote that code and holds its copyright, so the same code in
+    this edition is licensed to you under these terms instead. Publishing a
+    work under one licence does not surrender the right to license it under
+    another; nothing you receive here is AGPL, and nothing here takes anything
+    away from anyone who received the box editions under the AGPL.
+  - QEMU, and Keephaven's change to QEMU. Both are GNU General Public
+    License version 2. See THIRD-PARTY.md.
+  - The apps and the operating system inside the image. Each keeps its own
+    licence. See THIRD-PARTY.md.
+
+WHAT A BUYER MAY DO
+
+One purchase is one Keephaven. You buy a download and an update code; the
+drive is your own, and you write it yourself.
+
+You may write that download to a drive you own and use it on any computer you
+own or control, for as long as you like. You may write it again whenever you
+want - a new drive, a bigger drive, the same drive after a mistake - with the
+same download and the same code, as many times as you like and at no further
+cost. You may make copies of a drive for your own backup, and restore one onto
+a replacement drive if a drive fails or wears out. You may take a drive apart
+and move it to another enclosure.
+
+One at a time: writing a second drive to carry on with, or to keep as a spare,
+is yours to do. Running two Keephavens at once from one purchase is not.
+
+WHAT YOU MAY NOT DO
+
+You may not sell, rent, lend or give away copies of Keephaven's own code,
+whether on a drive or on its own. You may not build a product from it, with
+or without changes. You may not remove or alter the copyright, licence or
+source notices on the drive. Nothing here stops you doing what the law
+allows you to do regardless of this licence.
+
+NO WARRANTY
+
+This software is provided as is, without warranty of any kind, express or
+implied, including the warranties of merchantability, fitness for a
+particular purpose and non-infringement. To the extent the law allows,
+Keephaven LLC is not liable for any claim, damages or other liability
+arising from the software or its use, including loss of data. Keep your own
+backups of anything you cannot lose.
+
+GOVERNING LAW
+
+This licence is governed by the laws of the State of Ohio, United States,
+without regard to its conflict-of-laws rules.
+
+TRADEMARKS
+
+Keephaven(TM) and the Keephaven logo are trademarks of Keephaven LLC. This
+licence grants no right to use them.
+
+CONTACT
+
+support@keephaven.co for the drive, and for licensing Keephaven's own code on
+other terms. partnerships@keephaven.co reaches the same place.
