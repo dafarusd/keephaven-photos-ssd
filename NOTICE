@@ -15,14 +15,13 @@ refers to this file for them.
   Keephaven Photos SSD (this edition, a Windows PC and a drive) - proprietary,
   not published. This is the ONLY closed edition.
 
-  Keephaven Photos SSD - proprietary. See LICENSE-PHOTOS-SSD. Not published.
 
 Everything in the tree is AGPL-3.0-only unless its own header says
 otherwise. A file whose header reads
 
     SPDX-License-Identifier: LicenseRef-Keephaven-Proprietary
 
-is covered by LICENSE-PHOTOS-SSD instead. Today those files are:
+is covered by LICENSE.txt instead. Today those files are:
 
   launcher/windows/main.go
   launcher/windows/release.go
@@ -36,7 +35,7 @@ is covered by LICENSE-PHOTOS-SSD instead. Today those files are:
   docs/architecture/pc-update-apply.md
   docs/operations/runbooks/ssd-publish-gate.md
 
-modules/update-regen-default-pc.py is covered by LICENSE-PHOTOS-SSD as well, and carries no
+modules/update-regen-default-pc.py is covered by LICENSE.txt as well, and carries no
 header on purpose: its bytes are injected verbatim into the drive's generated
 apply script, and the generator fails if the result differs from the shipped
 script anywhere outside the one function it replaces. A header line there would
@@ -55,7 +54,7 @@ qemu-build-recipe.nix, with flake.lock beside it as qemu-build-flake.lock.
 
 launcher/qemu-windows/win32-hdev-fixed-length.patch is a change to QEMU's own
 block/file-win32.c. It is a derivative of GPL-2.0 code and is therefore
-GPL-2.0 whoever wrote it. It cannot be licensed under LICENSE-PHOTOS-SSD and it is not
+GPL-2.0 whoever wrote it. It cannot be licensed under LICENSE.txt and it is not
 offered under other terms. The QEMU binary built from it is GPL-2.0 as well.
 Every drive carries QEMU's licence, that patch in full, and a written offer
 of the complete corresponding source, good for three years.
@@ -68,9 +67,8 @@ and cannot. See THIRD-PARTY.md.
 
 WHY THE SHARED MODULES CAN BE PROPRIETARY HERE
 
-Keephaven LLC wrote every one of them - `git log --format=%an` over
-modules/update.nix, settings.nix, wizard.nix and dashboard.nix returns one
-name - and a copyright holder may license its own work twice. The box editions
+Keephaven LLC is the sole author of every one of them, and a copyright holder
+may license its own work twice. The box editions
 stay AGPL-3.0-only and public, and everyone who received them keeps those
 rights for ever; this edition ships the same code to its owners under LICENSE
 instead. Nothing of Keephaven's own is published for this edition, and no
@@ -83,4 +81,4 @@ used unmodified. See THIRD-PARTY.md.
 TRADEMARKS
 
 Keephaven(TM) and the Keephaven logo are trademarks of Keephaven LLC. Neither
-LICENSE-PHOTOS-SSD nor the AGPL grants any right to use them.
+LICENSE.txt nor the AGPL grants any right to use them.
