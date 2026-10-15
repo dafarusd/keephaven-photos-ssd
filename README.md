@@ -1,6 +1,6 @@
 <!--
 SPDX-FileCopyrightText: 2026 Keephaven LLC
-SPDX-License-Identifier: LicenseRef-Keephaven-Proprietary
+SPDX-License-Identifier: AGPL-3.0-only
 -->
 
 # Keephaven Photos SSD
@@ -11,16 +11,19 @@ No account, no subscription, and nothing leaves the drive.
 This repository is the documentation: what it is, what it needs, exactly what
 it does, and the checksums of every release.
 
-**The code for this edition is not here.** The box editions of Keephaven are
-open source under the AGPL at
-[github.com/dafarusd/keephaven](https://github.com/dafarusd/keephaven), and the
-system inside the SSD edition is built from that same source. The Windows
-program that runs it, the drive layout and the update path are ours and are not
-published. [LICENSE.txt](LICENSE.txt) says precisely which is which.
+**It is open source, AGPL-3.0-only, the same as the Keephaven boxes.** The
+source is at
+[github.com/dafarusd/keephaven](https://github.com/dafarusd/keephaven) —
+everything, including the Windows program that runs it, the drive layout and
+the update path. Build your own or write a drive; both are the point.
 
 ---
 
-## Coming soon
+## Early release
+
+Free while it's early. If you grab it now it stays free for you. Later
+versions will cost money. It's booted on one PC so far, so keep your originals
+somewhere else too.
 
 The drive is not included &mdash; you supply a USB SSD.
 
@@ -50,8 +53,9 @@ recommendation.
 ## Writing your drive
 
 1. The download is a folder: the image (about 5.4 GB compressed), a small
-   writer program, three checksum files, a how-to, and one file that is yours
-   alone — `Keephaven-code.txt`, your update code.
+   writer program, three checksum files, a how-to, and `Keephaven-code.txt` —
+   the code your drive uses to find its updates. It isn't a licence and it
+   doesn't identify you.
 2. Keep all of it in one folder and run the writer. Windows will warn you that
    the publisher is unknown; see [below](#the-two-warnings-you-will-see).
 3. The writer shows you the one drive it is about to erase and what is on it
@@ -92,16 +96,20 @@ To stop: type `q` in the Keephaven window and wait for "safe to unplug".
 ## Updates
 
 Your drive asks for a new version once a day. That request carries your update
-code and nothing else — no account, no address book, no file list.
+code and the version it's running — no account, no address book, no file list.
+Your drive also sets its clock from a public time server, and the apps inside
+check for their own versions, the same as they do on a Keephaven box.
 
 An update is a signed image. The signature is checked on the drive, against a
 public key baked into the read-only part of the system, before anything is
 installed. A failed check rejects the update. It will not downgrade itself, and
 nothing installs without you tapping to accept it.
 
-Your code gates **bandwidth, not the software**. If a code stops working, the
-drive carries on exactly as it is, keeps every photo, and says on its own screen
-that the code was not accepted — it never pretends to be a network fault.
+Your code gates **bandwidth, not the software**. It is not a licence and it
+grants you nothing you don't already have under the AGPL. If a code stops
+working, the drive carries on exactly as it is, keeps every photo, and says on
+its own screen that the code was not accepted — it never pretends to be a
+network fault.
 
 ## The two warnings you will see
 
@@ -118,13 +126,16 @@ Get-FileHash <file> -Algorithm SHA256
 
 ## Licence and source
 
-- This edition: [LICENSE.txt](LICENSE.txt). Keephaven's own code for it is not
-  free software and is not published.
-- The box editions: AGPL-3.0-only,
+- Keephaven's own code, this edition and the boxes alike: **AGPL-3.0-only**.
+  [LICENSE.txt](LICENSE.txt) is the full text,
+  [NOTICE](NOTICE) says what it covers, and the source is at
   [github.com/dafarusd/keephaven](https://github.com/dafarusd/keephaven).
-- Everything else inside — the operating system, the apps, and the QEMU the
-  drive runs on — keeps its own licence. [THIRD-PARTY.md](THIRD-PARTY.md) lists
-  them and says where to get the source.
+- The QEMU on the drive is GPL-2.0 and Keephaven patched it. The drive carries
+  QEMU's licence, the patch in full, the build recipe and a written offer of
+  the complete source.
+- Everything else inside — the operating system and the apps — keeps its own
+  licence. [THIRD-PARTY.md](THIRD-PARTY.md) lists them and says where to get
+  the source.
 
 ## Releases
 

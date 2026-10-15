@@ -1,4 +1,8 @@
-Keephaven Photos SSD 2026.10.17 - putting it on a drive
+Keephaven Photos SSD - putting it on a drive
+
+Early release. Free while it's early. If you grab it now it stays free for you.
+Later versions will cost money. It's booted on one PC so far, so keep your
+originals somewhere else too.
 
 You need a USB SSD of 64 GB or more, in a USB enclosure. Everything on it will
 be erased. Thunderbolt and USB4 enclosures are not supported yet: Windows
@@ -7,11 +11,11 @@ reports those as NVMe rather than USB, and the writer will not offer them.
 1. Plug in the drive. Unplug every other USB drive - the writer will not guess
  between two of them, and that is on purpose.
 2. Keep every file from the download in the same folder, including the small
- Keephaven-code.txt that came with your purchase. That file is how your drive
- asks Keephaven for new versions, and the writer puts it on the drive for you.
- It is not a password and it does not unlock anything on the drive. If it is
- missing the drive still works, but it will not be able to fetch updates and
- it will tell you so on its own screen.
+ Keephaven-code.txt that came with your download. That file is how your drive
+ finds its updates, and the writer puts it on the drive for you. It is not a
+ password, it is not a licence, it does not identify you, and it does not
+ unlock anything on the drive. If it is missing the drive still works, but it
+ will not be able to fetch updates and it will tell you so on its own screen.
 3. Double-click Keephaven-Writer.exe. Windows will ask whether to allow it to
  make changes to your device; it needs that to write to a drive at all.
 4. It shows you the one drive it will erase, what is on it now, and asks you to
@@ -29,8 +33,9 @@ two downloads; in PowerShell, Get-FileHash <file> -Algorithm SHA256.
 
 It checks the download before it touches the drive, then writes, then reads the
 whole drive back. Each of those three steps moves about 5 GB, 36 GB and 36 GB,
-and it prints how fast it is going as it works. On the PC we measured - a 2019
-laptop, USB 3 - the write took 2 minutes and the read-back a little over one.
+and it prints how fast it is going as it works. On the PC we measured - a Core i3
+laptop, USB 3 - the write took 2 minutes 19 seconds and the read-back a little
+over one.
 Yours will differ; a slow USB port can make it several times that. Do not unplug
 the drive while any of it is running. If the power goes out during the write, run
 the writer again - a half-written drive is simply unfinished, not broken.

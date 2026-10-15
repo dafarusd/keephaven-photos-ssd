@@ -1,20 +1,16 @@
 <!--
 SPDX-FileCopyrightText: 2026 Keephaven LLC
-SPDX-License-Identifier: LicenseRef-Keephaven-Proprietary
+SPDX-License-Identifier: AGPL-3.0-only
 -->
 
 # Third-party software in the Keephaven Photos SSD
 
-Keephaven's own code for this edition is proprietary, all of it, including the modules
-it shares with the box editions - Keephaven LLC wrote them and a copyright holder may
-license its own work twice. See LICENSE.txt. The box editions stay AGPL-3.0-only and
-public and are unaffected.
+Keephaven's own code for this edition is AGPL-3.0-only, the same as the box editions.
+The licence text sits beside this file, and the source is at
+https://github.com/dafarusd/keephaven .
 
 Everything below is other people's work, used unmodified as its makers publish it.
 Those licences are not Keephaven's to change and nothing here tries to.
-
-The drive also contains other people's software. Each keeps its own licence, and
-nothing in Keephaven's licence changes that or can.
 
 ## The app
 

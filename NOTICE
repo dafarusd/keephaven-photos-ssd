@@ -1,84 +1,50 @@
 Keephaven Photos SSD
 Copyright (c) 2026 Keephaven LLC.
 
-TWO LICENCES, ONE SOURCE TREE
+LICENSE
 
-This repository holds documentation only - no source. The source that builds
-Keephaven carries two editions, and they are not licensed the same way. The
-file paths below are paths in that source tree, named here because LICENSE.txt
-refers to this file for them.
+Keephaven's own code is licensed under the GNU Affero General Public
+License, version 3 only (AGPL-3.0-only). See LICENSE.txt for the full
+text. That is the same licence as the Keephaven boxes, Keephaven Home
+and Keephaven Photos, and it covers everything of Keephaven's own in
+this edition too: the Windows program that runs it, the build that
+produces that program, the drive's partition layout, and its update
+path.
 
-  Keephaven Home and Keephaven Photos (the BOXES) - AGPL-3.0-only, open source,
-  published at https://github.com/dafarusd/keephaven . Unchanged by anything
-  here, now or later. Their images are byte-identical to what shipped.
+The source is published at https://github.com/dafarusd/keephaven .
 
-  Keephaven Photos SSD (this edition, a Windows PC and a drive) - proprietary,
-  not published. This is the ONLY closed edition.
+COMMERCIAL LICENSING
 
+Keephaven LLC holds the copyright in Keephaven's own code and can
+license it under separate commercial terms, for example for OEM
+integration, white-label distribution, or products that can't meet the
+AGPL's conditions. Contact: partnerships@keephaven.co
 
-Everything in the tree is AGPL-3.0-only unless its own header says
-otherwise. A file whose header reads
-
-    SPDX-License-Identifier: LicenseRef-Keephaven-Proprietary
-
-is covered by LICENSE.txt instead. Today those files are:
-
-  launcher/windows/main.go
-  launcher/windows/release.go
-  launcher/windows/testbed.go
-  launcher/windows/go.mod
-  launcher/windows/README.md
-  launcher/qemu-windows/launcher.nix
-  modules/pc-hardware.nix
-  modules/update-apply-arm-pc-build.py
-  tests/pc-photos.nix
-  docs/architecture/pc-update-apply.md
-  docs/operations/runbooks/ssd-publish-gate.md
-
-modules/update-regen-default-pc.py is covered by LICENSE.txt as well, and carries no
-header on purpose: its bytes are injected verbatim into the drive's generated
-apply script, and the generator fails if the result differs from the shipped
-script anywhere outside the one function it replaces. A header line there would
-fail the build.
-
-modules/platform.nix is deliberately NOT in that list: the box images import
-it, so it belongs to the box editions and stays AGPL-3.0-only.
+A commercial license covers only Keephaven's own code. The apps, the
+operating system and QEMU keep their own licenses. See THIRD-PARTY.md.
 
 QEMU, AND OUR CHANGE TO IT
 
-launcher/qemu-windows/keephaven-qemu.nix is NOT in that list and is GPL-2.0-only.
-It is the script that controls the compilation of the QEMU binary we redistribute,
-which GPL-2.0 section 3 counts as part of that binary's corresponding source, so it
-cannot be withheld whoever wrote it. It travels on every drive as
-qemu-build-recipe.nix, with flake.lock beside it as qemu-build-flake.lock.
-
-launcher/qemu-windows/win32-hdev-fixed-length.patch is a change to QEMU's own
-block/file-win32.c. It is a derivative of GPL-2.0 code and is therefore
-GPL-2.0 whoever wrote it. It cannot be licensed under LICENSE.txt and it is not
-offered under other terms. The QEMU binary built from it is GPL-2.0 as well.
-Every drive carries QEMU's licence, that patch in full, and a written offer
-of the complete corresponding source, good for three years.
+The drive carries a Windows QEMU binary that Keephaven built, with one
+patch of its own to QEMU's block/file-win32.c. QEMU is GPL-2.0, that
+patch is a derivative of GPL-2.0 code and is GPL-2.0 whoever wrote it,
+and so is the recipe that compiles it. Every drive carries QEMU's own
+licence, the patch in full, the build recipe, the package pin, and a
+written offer of the complete corresponding source good for three
+years. See QEMU-SOURCE.txt and QEMU-LICENCE.txt on the drive, and
+THIRD-PARTY.md here.
 
 THE APPS AND THE OPERATING SYSTEM
 
-Immich, the other apps, and everything from nixpkgs keep their own licences.
-Several are AGPL-3.0 or GPL-3.0. Keephaven's own licence does not change them
-and cannot. See THIRD-PARTY.md.
-
-WHY THE SHARED MODULES CAN BE PROPRIETARY HERE
-
-Keephaven LLC is the sole author of every one of them, and a copyright holder
-may license its own work twice. The box editions
-stay AGPL-3.0-only and public, and everyone who received them keeps those
-rights for ever; this edition ships the same code to its owners under LICENSE
-instead. Nothing of Keephaven's own is published for this edition, and no
-public tag is offered on the drive.
-
-What cannot be licensed this way, and is not: the QEMU patch (GPL-2.0, a
-derivative of QEMU's own source) and the apps, which are other people's work
-used unmodified. See THIRD-PARTY.md.
+Immich, the other apps, and everything from nixpkgs keep their own
+licences. Several are AGPL-3.0 or GPL-3.0. Keephaven's licence does
+not change them and cannot. See THIRD-PARTY.md.
 
 TRADEMARKS
 
-Keephaven(TM) and the Keephaven logo are trademarks of Keephaven LLC. Neither
-LICENSE.txt nor the AGPL grants any right to use them.
+Keephaven(TM) and the Keephaven logo are trademarks of Keephaven LLC.
+Neither the AGPL nor a commercial license grants any right to use them.
+
+CONTRIBUTIONS
+
+See https://github.com/dafarusd/keephaven .
