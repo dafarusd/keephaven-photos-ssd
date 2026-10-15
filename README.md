@@ -22,7 +22,7 @@ published. [LICENSE.txt](LICENSE.txt) says precisely which is which.
 
 ## Coming soon
 
-Not on sale yet. The drive is not included &mdash; you supply a USB SSD.
+The drive is not included &mdash; you supply a USB SSD.
 
 ## What it is
 
