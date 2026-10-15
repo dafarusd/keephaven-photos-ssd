@@ -9,7 +9,7 @@ Your photo library, on a USB drive, running on a Windows PC you already own.
 No account, no subscription, and nothing leaves the drive.
 
 This repository is the documentation: what it is, what it needs, exactly what
-happens when you buy it, and the checksums of every release.
+it does, and the checksums of every release.
 
 **The code for this edition is not here.** The box editions of Keephaven are
 open source under the AGPL at
@@ -20,13 +20,9 @@ published. [LICENSE.txt](LICENSE.txt) says precisely which is which.
 
 ---
 
-## What it costs
+## Coming soon
 
-**Coming soon.** One purchase will be one Keephaven: write it to as many drives
-as you like, run one at a time. Updates included with no end date — there is no
-subscription and there never will be.
-
-The drive is not included.
+Not on sale yet. The drive is not included &mdash; you supply a USB SSD.
 
 ## What it is
 
@@ -51,9 +47,9 @@ phone, face grouping, search by what's in the picture, albums, shared links.
 A bigger drive is simply more room for photos. 64 GB is the floor, not a
 recommendation.
 
-## What happens when you buy it
+## Writing your drive
 
-1. You get a download folder: the image (about 5.4 GB compressed), a small
+1. The download is a folder: the image (about 5.4 GB compressed), a small
    writer program, three checksum files, a how-to, and one file that is yours
    alone — `Keephaven-code.txt`, your update code.
 2. Keep all of it in one folder and run the writer. Windows will warn you that
@@ -119,23 +115,6 @@ published in this repository and alongside the download. In PowerShell:
 ```powershell
 Get-FileHash <file> -Algorithm SHA256
 ```
-
-## What it does not do
-
-Not a roadmap. These are true today.
-
-- **The drive is not encrypted.** Anyone holding it can read your photos, the
-  same as anyone holding a Keephaven box. Keep it where you would keep the box.
-- **File sharing over the network does not work on a PC.** Windows itself uses
-  the one port that needs. Everything through the web page works normally; a
-  Keephaven box has no such limit.
-- **One login, shared.** Per-person accounts are planned, not built.
-- **It runs while the PC runs.** Close the window and your Keephaven stops.
-- **Remote access from outside your house has not been tested on a drive.** It
-  works on the boxes. On a drive it is untried, so it is not a feature here.
-- **No update has yet been installed on a drive end to end.** The path is built,
-  signed and tested, and the feed is live. The full round trip on real hardware
-  has not happened yet.
 
 ## Licence and source
 
