@@ -5,7 +5,7 @@ will cost money.
 
 Get it at [keephaven.co/ssd](https://keephaven.co/ssd). The download is one file,
 `Keephaven-Setup.exe`, about 6 MB, with your update code already inside it. It fetches
-everything else and checks each piece against the checksums below.
+everything else and checks the image and the writer against the checksums below.
 
 ## Checksums
 
