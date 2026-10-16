@@ -1,8 +1,7 @@
 Keephaven Photos SSD - putting it on a drive
 
 Early release. Free while it's early. If you grab it now it stays free for you.
-Later versions will cost money. It's booted on one PC so far, so keep your
-originals somewhere else too.
+Later versions will cost money.
 
 You need a USB SSD of 64 GB or more, in a USB enclosure. Everything on it will
 be erased. Thunderbolt and USB4 enclosures are not supported yet: Windows

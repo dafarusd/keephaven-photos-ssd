@@ -22,8 +22,7 @@ the update path. Build your own or write a drive; both are the point.
 ## Early release
 
 Free while it's early. If you grab it now it stays free for you. Later
-versions will cost money. It's booted on one PC so far, so keep your originals
-somewhere else too.
+versions will cost money.
 
 The drive is not included &mdash; you supply a USB SSD.
 

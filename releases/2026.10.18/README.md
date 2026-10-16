@@ -1,7 +1,7 @@
 # Keephaven Photos SSD 2026.10.18
 
 Early release. Free while it's early. If you grab it now it stays free for you. Later versions
-will cost money. It's booted on one PC so far, so keep your originals somewhere else too.
+will cost money.
 
 Get it at [keephaven.co/ssd](https://keephaven.co/ssd). The download is six files and your own
 update code.
