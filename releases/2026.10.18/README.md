@@ -3,8 +3,9 @@
 Early release. Free while it's early. If you grab it now it stays free for you. Later versions
 will cost money.
 
-Get it at [keephaven.co/ssd](https://keephaven.co/ssd). The download is six files and your own
-update code.
+Get it at [keephaven.co/ssd](https://keephaven.co/ssd). The download is one file,
+`Keephaven-Setup.exe`, about 6 MB, with your update code already inside it. It fetches
+everything else and checks each piece against the checksums below.
 
 ## Checksums
 
